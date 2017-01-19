@@ -1,0 +1,99 @@
+====================
+3.1 The Grid System
+====================
+
+This system it's mobile first - starts off as a fluid grid system with each column stacking on top of one another. And as the viewport size increases it will scale up to 12 columns
+
+-- 3.1.1 How the grid works --
+
+1.
+Start with a <div class='container'> 
+
+2.
+The columns must be wrapped in a row element <div class='row'>
+Depending on the layout it's needed for the page you will use a certain number of columns for each section. 
+
+3. 
+Divide the page in two areas similar:
+<div class='col-lg-6'></div>
+<div class='col-lg-6'></div>
+
+The -lg-  represent for large devices such as desktops.
+
+The column system goes from 0 - 12 and it's possible to divide, some examples:
+3 - 9  (col-lg-3 - col-lg-9)
+4 - 8  (col-lg-4 - col-lg-8)
+5 - 7  (col-lg-5 - col-lg-7)
+6 - 6  (col-lg-6 - col-lg-6)
+2 - 2 - 8 (col-lg-2 - col-lg-2 - col-lg-8)
+4 - 4 - 2 - 2 (col-lg-4 - col-lg-4 - col-lg-2 - col-lg-2)
+etc..
+
+The grid has a fixed width, and that width is given by the container class. 
+
+4. 
+Adding a fluid grid to the container class
+<div class='container-fluid'>
+This is how it's created a fluid grid system.
+
+-- 3.1.2. Offset columns -- 
+
+1.
+Create another <div class='row'> with another <div class='col-lg-2'>.
+
+2.
+To move two columns to the right we type in front of the number of columns col-lg-offset-2. And creste a new offset of 8.
+Like:
+<div class='col-lg-2 col-lg-offset-2'>
+<div class='col-lg-offset-8'>
+
+-- 3.1.3 Nesting grids --
+
+Inside a column we can put another row.
+
+1. 
+We create a <div class='row'> with two columns of 6 called col-lg-6 level 1.
+
+2. Inside the first <div class='col-lg-6> we create another row with another two classes of columns.
+Like:
+<div class='row'>
+	<div class='col-lg-6'>Level 1
+		<div class='row'>
+			<div class='col-lg-4'>Level 2</div>
+			<div class='col-lg-8'>Level 2</div>
+		</div>
+	</div>
+	<div class='col-lg-6'>Level 1</div>
+</div>
+
+The nested one only expand till 6 columns. It's like a small grid of 12 columns inside the parent that have 6 columns.
+
+-- 3.1.4. Syntax --
+
+col - Represents to bootstrap the grid columns.
+x number - number of columns
+lg - viewport size
+
+Because the grid is responsive:
+lg - large desktops 
+md - medium size devices
+sm - small devices (like tablets)
+sx - extra small devices (smartphones)
+
+-- 3.1.5. Viewport --
+
+At 1200px there is a breakpoint. But if we want to maintain the same column size.
+Just go to the class='col-lg-x' and add col-md-x
+Like:
+<div class='col-lg-2 col-md-2'>
+So when the viewport its smaller it keeps the columns same size.
+
+It's not needed the columns have the came size. They can have another ones, like: 
+<div class='col-lg-2 col-md-4'>
+
+But you're going to use the exact same number of columns, the -lg- size it's not needed. So:
+<div class='col-md-4'> - It means that on medium and large desktops, I'm going to use this column configuration.
+<div class='col-xs-4'> - On extra small, small, medium and large, use this configuration. 
+
+Aloows to create various layouts depending on which device you're viewing the website on. 
+

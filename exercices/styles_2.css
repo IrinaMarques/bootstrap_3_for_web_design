@@ -1,0 +1,5 @@
+.demo-area [class^='col-'] {
+	background-color: #434d55;
+	color: #fff;
+	margin-top: 16px;
+}
