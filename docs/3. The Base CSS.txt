@@ -97,3 +97,68 @@ But you're going to use the exact same number of columns, the -lg- size it's not
 
 Aloows to create various layouts depending on which device you're viewing the website on. 
 
+=====================
+3.2 Buttons and Icons
+=====================
+
+-- 3.2.1 Buttons --
+
+Bootstrap offers a lot of options for buttons:
+- styles
+- sizes
+
+1.
+Create a <div class='container'>
+
+For the button we add a class of btn.
+<a href="" class='btn'>simple button</a>
+
+For the button default we add btn-default
+<a href="" class='btn btn-default'>simple button</a>
+
+2. 
+Create diferent colors.
+.btn-default - whitout styles
+.btn-primary - blue button
+.btn-success - green 
+.btn-info - light blue
+.btn-warning - orange
+.btn-danger - red
+.btn-link - look like a link
+
+3.
+Make a call area
+We can combine buttons to make a call of action area:
+<a href='' class='btn btn-primary'>Buy it Now</a>
+<a href='' class='btn btn-link'>Get free Trial</a>
+
+4.
+Different sizes
+.btn-lg - large
+.btn-md - medium
+.btn-sm - small
+.btn-xs - extra small
+
+5.
+Block element
+We can create a block level element out of any button - it will span the full width of its parent
+.btn-block
+
+6.
+Tags we can use:
+- anchor tags 
+- button tags
+- input type submit
+
+-- 3.2.2 Icons --
+
+http://getbootstrap.com/components/
+
+Replace the icons with a icon font.
+In the class we add a glyphicon and the name of the icon we want.
+<span class='glyphicon glyphicon-search'></span>
+
+We can:
+- Scale/Resize
+- Color
+- Add to a button
