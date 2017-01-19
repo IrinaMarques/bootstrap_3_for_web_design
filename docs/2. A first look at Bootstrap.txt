@@ -1,0 +1,32 @@
+=======================================
+2.1 Bootstrap Overview and Installation
+=======================================
+
+--> lesson_1.html
+
+Give the tools needed to:
+- build websites
+- web applications
+- prototypes
+
+Comes with:
+- Variety of JavaScript powered controls (modal windows, drop down menus, tabs and a carousel control)
+- Styles (buttons, forms and tables)
+- Icon font (scalable and modifies)
+- Responsive grid (12-column)
+
+Website:
+getbootstrap.com
+
+Two options:
+- can download the all bootstrap 
+- copy the CDN
+
+- clicking on the costumize link allows to download a certain part of the program like typography, icons etc..
+
+In this case we are going to option for the CND:
+1. The first two paragraphs go to the head. 
+2. The last one goes to the body. 
+3. Then Load jQuery
+
+Once these files are loaded, it's ready to start using the framework.
