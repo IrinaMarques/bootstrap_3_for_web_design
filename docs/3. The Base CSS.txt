@@ -162,3 +162,124 @@ We can:
 - Scale/Resize
 - Color
 - Add to a button
+
+
+==================
+3.3 Form Controls
+==================
+
+lesson_4.html
+
+https://v4-alpha.getbootstrap.com/components/forms/
+
+-- 3.3.1 Default form --
+
+1. 
+Add a container then start with a simple component form and add a role equals form to help with accessebility.
+<form action='' role='form'></form>
+
+2. 
+Every elements along with its labels should be included in a div with a class of .from-group
+- ensure proper space between this elements 
+<div class='form-group'>
+
+3. 
+Inside the from-group 
+- label and input
+<label for='form-elem-1'>This is a label</label><input type="text" id='form-elem-1' class='form-control'>
+
+In the label 
+for='form-elem-1'
+
+In the input 
+type='text'
+id='form-elem-1'
+class='form-control'
+
+By default every element with a class of form-control has a width of 100% but it's possible to alter this. 
+
+-- 3.3.2 Help Block --
+
+Help users guide through the form.
+<p class='help-block'>
+
+-- 3.3.3 Inline form --
+
+Elements on the same line. 
+Instead of labels you would have screen reader only labels.
+
+1.  
+Create another form but this time with a class form-inline
+<form action='' role='form' class='form-inline'>
+
+2.
+Then the same as above:
+- div with a class of form-group
+- label
+- input
+But this time in the label we add a class sr-only that means screen reader only.
+<label for='form-elem-4' class='sr-only'>Second inline form label</label> 
+
+3. 
+Add placeholders, since  we no longer have labels these are needs to know what he needs to add in there. 
+<input type="password" id='form-elem-4' class='form-control' placeholder='Password'>
+
+4. 
+We can add a submmit button.
+<button type='submit' class='btn btn-default'>Sign in</button>
+
+Or a checkbox:
+<div class='checkbox'>
+     <label for=''><input type="checkbox">Remember me</label>
+</div>
+
+-- 3.3.4. Horizontal Form --
+
+For the horizontal form use the class form-horizontal
+<form action='' role='form' class='form-horizontal'>
+
+-- 3.3.5. Size of the Input -- 
+
+Use the column system to control the width
+<div class="row">
+    <div class="col-xs-2">
+        <input type="text" class="form-control" placeholder=".col-xs-2">
+     </div>
+</div>
+
+Use input-x to control the size
+.input-lg
+.input-md
+.input-sm
+.intput-xs
+
+-- 3.3.6 Validation States -- 
+
+Bootstrap includes vaidation styles for:
+- error
+- warning
+- success
+
+To use it's needed to add the following classes to the parent elements
+.has-warning
+.has-error
+.has-success
+Ex.
+<div class='form-group has-warning'>
+
+To control the colors on the labels we have to create a class on the label.
+.control-label
+Ex. 
+<label for='form-elem-10' class="control-label">This is a label</label>
+
+-- 3.3.7 Add icons --
+
+On the parent group we have to add a class
+.has-feedback
+<div class='form-group has-warning has-feedback'>
+In the end of the input put a span
+<span class='glyphicon glyphicon-warning-sign form-control-feedback'></span> 
+
+warning - glyphicon-warning-sign
+error - glyphicon-remove
+success - glyphicon-ok

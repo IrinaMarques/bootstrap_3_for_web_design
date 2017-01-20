@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset="utf-8">
+	<title>Bootstrap for Web Design</title>
+	<meta name="description" content="A Tuts+ course">
+	<meta name="author" content="Adi Purdila">
+
+	<!-- Mobile Specific Meta-->
+	<meta name='viewport' content='width=device-width, inicial-scale=1, maximum-scale=1'>
+
+	<!-- 1.Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- 2.Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	
+	<!-- <link rel="stylesheet" href="styles_2.css"> -->
+</head>
+<body>
+
+	<header>
+		<div class="jumbotron">
+			<div class="container">
+				<h1>Bootstrap for Web Design</h1>
+				<h3>Lesson 4: Form Controls</h3>
+			</div> <!-- end container -->
+		</div> <!-- end jumbotron -->
+	</header>
+		
+	<div class='demo-area'>
+		
+		<!-- DEFAULT FORM -->	
+		<div class="container">
+			<form action='' role='form'>
+				<div class='form-group'>
+					<!-- for it's a pointer equals to the id in the input-->
+					<label for='form-elem-1'>This is a label</label> 
+					<!-- same id of the for in the label-->
+					<input type="text" id='form-elem-1' class='form-control'> 
+				</div>
+				<!-- using the form-group class ensure a proper space between the two divs -->
+				<div class='form-group'>
+					<label for='form-elem-2'>This is another label</label> 
+					<input type="text" id='form-elem-2' class='form-control'> 
+					<!-- a help text use the class .help-block -->
+					<p class='help-block'>This is a example help text</p>
+				</div>
+			</form>
+
+			<hr>
+			<!-- INLINE FORM -->
+			<form action='' role='form' class='form-inline'>
+				<div class='form-group'>
+					<!-- add a class of sr-only - screen reader only, only been show on screen readers -->
+					<!-- placeholder to let know what is needed to enter in there -->
+					<label for='form-elem-3' class='sr-only'>Inline form label</label> 
+					<input type="text" id='form-elem-3' class='form-control' placeholder='Enter email'>
+				</div>
+				<div class='form-group'>
+					<label for='form-elem-4' class='sr-only'>Second inline form label</label> 
+					<input type="password" id='form-elem-4' class='form-control' placeholder='Password'>
+				</div>
+				<!-- A sign in button that is on the same line -->
+				<button type='submit' class='btn btn-default'>Sign in</button>
+				<!-- A checkbox in the same line -->
+				<div class='checkbox'>
+					<label for=''><input type="checkbox">Remember me</label>
+				</div>
+			</form>
+
+			<hr>
+			<!-- HORIZONTAL FORM -->
+			<!-- When we take the sr-only it's possible to put Email and Password outside -->
+			<form action='' role='form' class='form-horizontal'>
+				<div class='form-group'>
+					<label for='form-elem-5'>Email</label> 
+					<input type="text" id='form-elem-5' class='form-control' placeholder='Enter email'>
+				</div>
+				<div class='form-group'>
+					<label for='form-elem-6'>Password</label> 
+					<input type="password" id='form-elem-6' class='form-control' placeholder='Password'>
+				</div>
+				<div class='form-group'>
+					<button type='submit' class='btn btn-default'>Sign in</button>
+				</div>
+				<div class='form-group'>
+					<div class='checkbox'>
+						<label for=''><input type="checkbox">Remember me</label>
+					</div>
+				</div>
+			</form>
+			
+			<hr>
+			<!-- SIZES -->
+			<!-- uses the column system -->
+			<!-- use input-size to control the size of the inputs -->
+			<form action="" role='form'></form>
+				<div class='row'>
+					<div class='col-lg-2'>
+						<input type="text" class="form-control input-xs" placeholder=".col-lg-2">
+					</div>
+					<div class='col-lg-5'>
+						<input type="text" class="form-control input-lg" placeholder=".col-lg-5">
+					</div>
+				</div>
+			</form>
+
+			<hr>
+			<!-- VALIDATION STATES -->
+			<form action='' role='form'>
+				<!-- add a class next to the form-group -->
+				<div class='form-group has-warning'>
+					<label for='form-elem-7'>This is a label</label> 
+					<input type="text" id='form-elem-7' class='form-control'> 
+					<p class='help-block'>Example of a Warning</p>
+				</div>
+				<div class='form-group has-error'>
+					<label for='form-elem-8'>This is another label</label> 
+					<input type="text" id='form-elem-8' class='form-control'> 
+					<p class='help-block'>Example of a Error</p>
+				</div>
+				<div class='form-group has-success'>
+					<label for='form-elem-9'>This is another label</label> 
+					<input type="text" id='form-elem-9' class='form-control'> 
+					<p class='help-block'>Example of a Success</p>
+				</div>
+				<!-- to add a icon .has-feedback -->
+				<div class='form-group has-warning has-feedback'>
+					<!-- to control the color on the label too -->
+					<label for='form-elem-10' class="control-label">This is a label</label> 
+					<input type="text" id='form-elem-10' class='form-control'> 
+					<p class='help-block'>Example of a warning with a label color too and an icon</p>
+					<!-- to add a icon -->
+					<span class='glyphicon glyphicon-warning-sign form-control-feedback'></span>
+				</div>
+			</form>
+		</div>
+	</div> <!-- end of demo-area-->
+
+	<footer>
+	</footer>
+	
+	<!-- 4.Load jQuery -->
+	<script src='http://code.jquery.com/jquery-2.1.0min.js'></script>
+	<!-- 3.Latest compiled and minified JavaScript - this will load the javascript file -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
