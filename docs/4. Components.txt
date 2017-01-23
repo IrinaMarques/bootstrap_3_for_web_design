@@ -51,3 +51,58 @@ We can use this type of dropdowns inside:
 - nav bars
 - tabs 
 - pills
+
+=========
+4.2 Tabs
+=========
+
+The tabs have two components:
+- nav tabs: which contain links to the various sections
+- tab content/ tab panes: contain content that will be switched
+
+1.
+ul
+class= .nav .nav-tabs
+list with anchors 
+
+Each anchor with the following properties:
+data-toggle = tab (to act like a tab)
+href will link to the various ids that we'll set for individual tab panes
+<ul class='nav nav-tabs'>
+<li><a href="#section-1" data-toggle='tab'>Section 1</a></li>
+
+2.
+Usually the first tab it's the active one
+Set the class of active to the first list item
+<li class='active'><a href="#section-1" data-toggle='tab'>Section 1</a></li>
+
+3.
+Next tab content so we create a div with a class of tab content.
+Inside three divs with a class of tab-pane times three with a id of section 1,2,3 and each one conatin some content <p>
+<div class='tab-content'>
+   <div class='tab-pane active' id='section-1'>
+      <p>This is section 1</p>
+   </div>
+
+4. 
+We can add a fade effect by adding a class to the .tab-pane
+In the active one we have to ad .in to let it know that is the active one.
+<div class='tab-pane fade in active' id='section-1'>
+
+5. 
+If instead of nav we want to use nav-pills
+<ul class='nav nav-pills'>
+
+6.
+.nav-stacked
+To stack
+<ul class='nav nav-pills nav-stacked'>
+
+7.
+.nav-justified
+Make tabs in equal size depending of the parent element
+<ul class='nav nav-pills nav-justified'>
+On screen readers smaller than 768 px these nav links are stacked.
+
+
+
