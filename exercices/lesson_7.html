@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset="utf-8">
+	<title>Bootstrap for Web Design</title>
+	<meta name="description" content="A Tuts+ course">
+	<meta name="author" content="Adi Purdila">
+
+	<!-- Mobile Specific Meta-->
+	<meta name='viewport' content='width=device-width, inicial-scale=1, maximum-scale=1'>
+
+	<!-- 1.Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- 2.Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="styles_2.css"> 
+</head>
+<body>
+
+	<header>
+	<!-- Place a navbar in the top of the site with a fixed position and inverse the color-->
+		<div class='nav navbar navbar-default navbar-fixed-top navbar-inverse' role='navigation'>
+			<div class='container'>
+			<!-- navbar components -->
+				<div class='navbar-header'>
+					<!-- Button will trigger the responsive version - hamburger button -->
+					<button type='button' class='navbar-toggle' data-toggle='collapse' data-target='#example-nav-collapse'>
+					<!-- For accessibility only it's a text that will be read by screen readers -->
+						<span class='sr-only'>Toggle navigation</span>
+						<span class='icon-bar'></span>
+						<span class='icon-bar'></span>
+						<span class='icon-bar'></span>
+					</button>
+					<a href="#" class='navbar-brand'>Brand</a>
+				</div>
+
+				<div class='collapse navbar-collapse' id='example-nav-collapse'>
+				<!-- Inside we can put what we want: links, dropdowns, forms, menus... -->
+
+					<!-- SIMPLE LINKS -->
+					<ul class='nav navbar-nav'>
+						<li class='active'><a href="#">Link 1</a></li> <!-- class active to the parent list item -->
+						<li><a href="#">Link 2</a></li>
+					</ul>
+					
+					<!-- FORM -->
+					<!-- align to the right with a submit button -->
+					<form action='' class='navbar-form navbar-right' role='search'>
+						<div class='form-group'>
+							<input type="" class="form-control" placeholder="search">
+						</div>
+						<button type='submit' class='btn btn-default'>Submit</button>
+					</form>
+
+					<!-- TO ADD BUTTONS -->
+					<!-- to be vertically align to the navbar .navbar-btn -->
+					<a href="#" class='btn btn-default navbar-btn'>This is a Button</a>
+
+					<!-- ADD A TEXT -->
+					<!-- we have to add the .navbar-text to be align in the navbar-->
+					<p class='navbar-text'>Hello!</p>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="jumbotron">
+			<div class="container">
+				<h1>Bootstrap for Web Design</h1>
+				<h3>Lesson 7: The Navbar</h3>
+			</div> <!-- end container -->
+		</div> <!-- end jumbotron -->
+			
+		<div class="container">
+		</div> <!-- end container -->
+	</header>
+		
+	<div class='demo-area'>
+	</div> <!-- end of demo-area-->
+
+	<footer>
+	</footer>
+	
+	<!-- 4.Load jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- 3.Latest compiled and minified JavaScript - this will load the javascript file -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

@@ -104,5 +104,45 @@ Make tabs in equal size depending of the parent element
 <ul class='nav nav-pills nav-justified'>
 On screen readers smaller than 768 px these nav links are stacked.
 
+===============
+4.3 The Navbar
+===============
+
+1.
+To place a navbar in the top of a page
+<header>
+<div class='nav navbar navbar-default' role='navigation'></div>
+
+Inside we place all the navbar components
+<div class='navbar-header'></div>
+
+The navbar-header will contain the logo and to do a responsive version we have to add a button that will toggle that responsive version of the navbar.
+<button type='button' class='navbar-toggle' data-toggle='collapse' data-target='#example-nav-collapse'>
+<span class='icon-bar'></span>
+
+The span will be the number of lists that are in the button.
+
+2.
+The actual tab contents we will define after the navbar-header div.
+
+<div class='collapse navbar-collapse' id='example-nav-collapse'>
+
+And inside we can put whaterver we want:
+- menu
+- forms
+- dorpdowns
+- links
+...
+
+With all this content added when we resize the page around 760px the navbar goes responsive.
+
+The navbar have a few more options:
+- set position as fixed on the top or at the bottom
+.navbar-fixed-top
+.navbar-fixed-bottom
+
+A diferent variation of the sidebar:
+.navbar-inverse
+ 
 
 
