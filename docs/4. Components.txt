@@ -144,5 +144,37 @@ The navbar have a few more options:
 A diferent variation of the sidebar:
 .navbar-inverse
  
+===============
+4.4 List Group
+===============
 
+Can be used:
+- displaying simple lists 
+- more complex lists with costum content
 
+1.
+Start with a ul with a class of .list-group
+Inside list items with a class of .list-group-item
+
+<ul class='list-group'>	
+<li class='list-group-item'>Some content goes here<span class='badge'>1</span></li>
+
+2.
+To link the items to something 
+<ul class='list-group'>
+<a href="" class='list-group-item'>Item 1</a>
+
+3.
+Add color
+<ul class='list-group'>
+<a href="" class='list-group-item active list-group-item-success'>Item 1</a>
+<a href="" class='list-group-item list-group-item-info'>Item 2</a>
+
+4.
+The costum content
+<div class='list-group'>
+<a href="" class='list-group-item active'>
+<h4 class='list-group-item-heading'>This is a heading</h4>
+<p class='list-group-item-text'>This is the content.</p>
+</a>
+</div>
