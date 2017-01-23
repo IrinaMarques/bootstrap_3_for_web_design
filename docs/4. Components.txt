@@ -178,3 +178,45 @@ The costum content
 <p class='list-group-item-text'>This is the content.</p>
 </a>
 </div>
+
+===========
+4.5 Panels
+===========
+
+First a div
+.panel
+.panel-default
+<div class='panel panel-default'>
+
+A div
+.panel-body
+<div class='panel-body'>
+
+Inside we can put anything we want.
+
+1.
+Add headings
+We can add headings to the class of panel
+<div class='panel-heading'>This is a panel heading</div>
+
+2.
+Make emphasis
+If we want to put more emphasis in the heading we create a <h4> with a class .panel-title
+<div class='panel-heading'><h4 class='panel-title'>This is a heading</h4></div>
+
+3.
+Add a footer
+We can also have a panel-footer after the panel-body
+<div class='panel-footer'>Panel footer</div>
+
+4.
+Add colors
+just add the class to the main panel element.
+<div class='panel panel-default panel-primary'>
+
+5.
+Panels and tables.
+If we don't have a panel-body there is no distance between table and panel-heading.
+
+6.
+Panels and lists
