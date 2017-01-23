@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset="utf-8">
+	<title>Bootstrap for Web Design</title>
+	<meta name="description" content="A Tuts+ course">
+	<meta name="author" content="Adi Purdila">
+
+	<!-- Mobile Specific Meta-->
+	<meta name='viewport' content='width=device-width, inicial-scale=1, maximum-scale=1'>
+
+	<!-- 1.Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- 2.Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="styles_2.css"> 
+</head>
+<body>
+
+	<header>
+		<div class="jumbotron">
+			<div class="container">
+				<h1>Bootstrap for Web Design</h1>
+				<h3>Lesson 10: Modal Windows</h3>
+			</div> <!-- end container -->
+		</div> <!-- end jumbotron -->
+	</header>
+		
+	<div class='demo-area'>
+		<div class='container'>
+			<!-- The modal windows only appears when it's trigger so we create a button-->
+			<button type='button' class='btn btn-primary' data-toggle='modal' data-target='#modal-1'>Demo Modal</button> 
+				<!-- MODAL with fade -->
+				<div class='modal fade' id='modal-1' tabindex="-1" role='dialog'>
+					<!-- Modal dialog and size - modal-lg or modal-sm -->
+					<div class='modal-dialog modal-lg'>
+						<div class='modal-content'>
+							<!-- Modal Header contains a Buttom and a Title -->
+							<div class='modal-header'>
+								<!-- The buttom will close a modal window -->
+								<button type='button' class='close' data-dismiss='modal'>&times;</button>
+									<!-- The title -->
+								<h4 class='modal-title'>Modal title</h4>
+							</div>
+							<div class='modal-body'>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed error quas, vitae cum repellendus, ipsam veritatis sunt aperiam eum quo, nisi culpa tempore ad placeat nam! Eum beatae, quo aliquid.
+							</div>
+							<!-- In the footer we add a Close and a Save buttom -->
+							<div class='modal-footer'>
+								<a href="#" class='btn btn-default' data-dismiss='modal'>Close</a>
+								<a href="#" class='btn btn-primary'>Save</a>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div> <!-- end of demo-area-->
+
+	<footer>
+	</footer>
+	
+	<!-- 4.Load jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- 3.Latest compiled and minified JavaScript - this will load the javascript file -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

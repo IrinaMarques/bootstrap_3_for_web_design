@@ -220,3 +220,18 @@ If we don't have a panel-body there is no distance between table and panel-headi
 
 6.
 Panels and lists
+
+=================
+4.6 Modal Windows
+=================
+
+Modal Windows it's one of those windows that show up on a darker semi-transparent background. With a option of:
+- click on a close buttom 
+- click outside to close it
+
+1.
+A div with a class of
+.modal
+Give an id, ex.
+modal-1
+and a tabindex of -1
