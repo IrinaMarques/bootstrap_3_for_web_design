@@ -1,0 +1,53 @@
+==============
+4.1 Dropdowns
+==============
+
+1. 
+We start with a div with the class dropdown and then we have two components:
+- the button or link: will trigger the dropdown
+- the dowpdown itself in the menu
+
+2.
+The button have:
+- class='btn dropdown-toggle'
+- type='button' 
+- id='dd-menu' 
+- data-toggle='dorpdown'
+<button class='btn dropdown-toggle' type='button' id='dd-menu' data-toggle='dropdown'>
+
+We can add a small arrow:
+<span class='caret'></span>
+
+3.
+For the menu: 
+- unordered list with a class od dropdown-menu with a role of menu (for accessibility).
+- list item with a role of presentation
+- inside the list an anchor tag, href it's nothing, a role of menu item and a tabindex of -1 (prevent this link from being accessed by tabbing) 
+<li role='presentation'><a href="#" role='menuitem' tabindex="-1">List item</a></li>
+
+4. 
+.divider
+We can add dividers to the various elements
+<li role='presentation' class='divider'></li>
+
+5. 
+.disabled
+It's possible to disable a certain element by add the class of disable
+<li role='presentation' class='disabled'><a href="#" role='menuitem' tabindex="-1">List item</a></li>
+
+6. 
+.header
+Add headers.
+<li role='presentation' class='dropdown-header'>A header - first group</li>
+
+7. 
+Change the apperance of the button adding
+.btn btn-default
+.btn btn-primary
+...
+
+8.
+We can use this type of dropdowns inside:
+- nav bars
+- tabs 
+- pills

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset="utf-8">
+	<title>Bootstrap for Web Design</title>
+	<meta name="description" content="A Tuts+ course">
+	<meta name="author" content="Adi Purdila">
+
+	<!-- Mobile Specific Meta-->
+	<meta name='viewport' content='width=device-width, inicial-scale=1, maximum-scale=1'>
+
+	<!-- 1.Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- 2.Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="styles_2.css"> 
+</head>
+<body>
+
+	<header>
+		<div class="jumbotron">
+			<div class="container">
+				<h1>Bootstrap for Web Design</h1>
+				<h3>Lesson 5: Dropdowns</h3>
+			</div> <!-- end container -->
+		</div> <!-- end jumbotron -->
+	</header>
+		
+	<div class='demo-area'>
+		<div class='container'>
+			<div class='dropdown'>
+				<!-- data-toggle it's going to make the dropdown button work -->
+				<!-- the span adds the arrow down -->
+				<!-- we can alter the apperance of the button with a .btn-default -->
+
+				<button class="btn btn-default dropdown-toggle" type="button" id="dd-menu" data-toggle="dropdown">Dropdown <span class="caret"></span>
+				</button>
+				
+				<ul class="dropdown-menu" role="menu">
+				<!-- tabindex prevents to being accessed by tabbing -->
+					<!-- .header -->
+					<li role='presentation' class='dropdown-header'>A header - first group</li>
+					<!-- .disabled -->
+					<li role='presentation' class='disabled'><a href="#" role='menuitem' tabindex="-1">List item</a></li>
+					<li role='presentation'><a href="#" role='menuitem' tabindex="-1">List item</a></li>
+					<li role='presentation'><a href="#" role='menuitem' tabindex="-1">List item</a></li>
+					<!-- .division -->
+					<li role='presentation' class='divider'></li>
+					<!-- .header -->
+					<li role='presentation' class='dropdown-header'>A header - second group</li>
+					<li role='presentation'><a href="#" role='menuitem' tabindex="-1">List item</a></li>
+				</ul>
+			</div>
+		</div>
+
+
+	</div> <!-- end of demo-area-->
+
+	<footer>
+	</footer>
+	
+	<!-- 4.Load jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- 3.Latest compiled and minified JavaScript - this will load the javascript file -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
