@@ -234,4 +234,181 @@ A div with a class of
 .modal
 Give an id, ex.
 modal-1
-and a tabindex of -1
+and a tabindex=-1 (so we can't tab through its contents)
+role=dialog (help with accessibility)
+<div class='modal' id='modal-1' tabindex="-1" role='dialog'>
+
+2.
+A div with a class of
+.modal-dialog
+<div class='modal-dialog'>
+
+3.
+A div with a class of
+.modal-content
+<div class='modal-content'>
+
+It's a lot of markup but it's necessary in order to properly style it.
+
+Inside modal content we have three sections:
+- header - contains: close button and the title
+- body
+- footer
+
+4.
+Header
+<div class='modal-header'>
+
+Button
+The button inside the header, it's going to close it's parent window
+<button type='button' class='close' data-dismiss='modal'>&times;</button>
+
+Title
+We use a h4 with a class of
+.modal-title
+<h4 class='modal-title'> Modal title</h4>
+
+5.
+The modal windows only appears when it's trigger.
+So before the modal we have to add a button.
+<button type='button' class='btn btn-primary' data-toggle='modal' data-target='#modal-1'>Demo Modal</button>
+
+6.
+Next we create the body. With a div with a
+.modal-body
+<div class='modal-body'>
+
+7.
+Then the modal-footer which contains anything we want
+<div class='modal-footer'>
+
+In this case we create a close and a save buttom.  
+<a href="#" class='btn btn-default' data-dismiss='modal'>Close</a>
+<a href="#" class='btn btn-primary'>Save</a>
+
+8.
+It's possible to add a fade effect
+.fade
+
+9.
+For bigger or smaller modal window we have two classes
+It's added to the modal-dialog
+.modal-lg
+.modal-sm
+
+===========================
+4.7 Collapse and Carousels
+===========================
+
+-- 4.7.1 Collapse --
+
+A colection of elements that have a heading and a body with content. And only expand the first element while the others are collapsed.
+
+Bootstrap uses a panel group:
+
+<div class='panel-group' id='#accordion'>
+<div class='panel panel-default'>
+<div class='panel-heading'></div> 
+<div class='panel-collapse'></div>
+</div>
+
+1.
+The panel-heading will just have the title
+Create a h4 with a class
+.panel-title
+
+2.
+Inside the h4
+Create an anchor tag with: 
+href to #content-1
+data-toggle='collapse'
+data-parent='#accordion' (the id of the accordion)
+<h4 class='panel-title'>
+<a href="#content-1" data-toggle='collapse' data-parent='#accordion'>Collapse 1</a>
+</h4>
+
+3.
+On the panel-collapse add another class
+.collapse in (since it's the first element, needs to be expanded at first).
+Inside  a div with a class of panel-body
+This will have a paragraph
+Set and id='content-1'
+<div class='panel-collapse collapse in' id='content-1'>
+<div class='panel-body'>
+<p> ... </p>
+</div>
+</div>
+
+4.
+Then repeat the times we need depending how many elements it's needed.
+Update the #ID's
+Remove the in class
+
+-- 4.7.2 Carousels --
+
+Carousel is better known as a slider.
+Takes several images or several blocks of HTML and chenge them periodicaly or offer controls so you we can change them by hand.
+
+Components:
+The carousel class
+- indicators: telling which slide it's active
+- carousel-inner: hold the slides
+- controls: left and right or previous and next.
+
+1.
+The carousel:
+Div with a class
+.carousel
+.slide
+data-ride='carousel'
+id='carousel-example'
+<div class='carourel slide' data-ride='carourel' id='carousel-example'></div>
+
+2.
+The indicator:
+Ordered List with a class 
+.carousel-indicators.
+<ol class='carousel-indicators'>
+
+A list item that has the data target attribute that points to the id of our carousel which is #carousel-example.
+Then in the same list item we have data-slide-to='0' meaning which slide should that indicator go to. Times three.
+<li data-target='#carousel-example' data-slide-to='0'></li>
+
+3.
+The carousel-inner:
+Div with a class
+.carousel-inner
+<div class='carousel-inner'>
+
+Inside each slide will be placed inside a div with a class of item
+<div class='item'>
+
+We can put anything inside. But let's make an example with some images.
+<div class='item'>
+<img src="../img/slide-1.jpg" alt='slide'>	
+</div>
+
+4.
+The controls:
+- anchor tag
+- .left .carousel-control classes
+- href='#carousel-example' (id of the carousel)
+- data-slide='prev'
+<a href="#carousel-example" class='left carousel-control' data-slide='prev'>
+
+Inside put an icon
+<span class='glyphicon glyphicon-chevron-left'></span>
+
+5.
+Caption
+In the carousel-inner next to the img
+Div with a class
+.carousel-caption
+<h3>This is a caption</h3>
+<p> ...text... </p>
+
+<img src="../img/slider-1.jpg" alt='slide'>
+<div class='carousel-caption'>
+<h3>This is a caption</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+</div>	
