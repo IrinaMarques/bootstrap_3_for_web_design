@@ -8,3 +8,6 @@ A fixed navbar needs a padding from the content below.
 Banner:
 .btn-group - merge the two buttons in a certain point
 
+Image:
+.img-responsive - will apply max width 100% and height auto to an image, making it resize according to it's parent.
+
