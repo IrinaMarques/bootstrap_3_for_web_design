@@ -1,0 +1,10 @@
+=========
+Exercice
+=========
+
+Navbar:
+A fixed navbar needs a padding from the content below. 
+
+Banner:
+.btn-group - merge the two buttons in a certain point
+
