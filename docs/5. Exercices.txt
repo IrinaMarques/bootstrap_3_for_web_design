@@ -11,3 +11,5 @@ Banner:
 Image:
 .img-responsive - will apply max width 100% and height auto to an image, making it resize according to it's parent.
 
+.well - like a panel but has a darker background
+
