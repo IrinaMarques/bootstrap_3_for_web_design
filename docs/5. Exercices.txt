@@ -2,6 +2,10 @@
 Exercice
 =========
 
+In desktop:
+
+--> exercices.html
+
 Navbar:
 A fixed navbar needs a padding from the content below. 
 
@@ -13,3 +17,14 @@ Image:
 
 .well - like a panel but has a darker background
 
+With breakpoints:
+
+--> exercices1.html
+
+Scroll Spy:
+When I scroll to a specific category the corresponding link will become active. 
+
+<body data-spy='scroll' data-target='#main-navbar'>
+
+===================================================================
+After building the markup for the page we can proceed to styling it. 
